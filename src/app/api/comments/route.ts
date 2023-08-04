@@ -11,16 +11,14 @@ export async function GET() {
 }
 
 export async function POST(req: NextRequest) {
-  const { data } = await req.json()
-
-  console.log(data)
+  const { name, email, message } = await req.json()
 
   try {
     await prisma.comment.create({
       data: {
-        name: data.name,
-        email: data.email,
-        message: data.message,
+        name,
+        email,
+        message,
       },
     })
     return NextResponse.json({ message: 'OK' }, { status: 200 })

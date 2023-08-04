@@ -9,9 +9,9 @@ interface LinkProps {
 }
 
 const Link: FC<LinkProps> = ({ href, label, external, commentary }) => {
-  const contClasses = 'w-full flex justify-between items-center hover:bg-gray-300 hover:bg-opacity-20 rounded-md transition-all'
+  const contClasses = 'w-full flex justify-between items-center hover:bg-gray-300 hover:bg-opacity-20 rounded-md '
   const classes = 'text-cyan-400 hover:underline underline-offset-2'
-  const commClasses = 'text-xs whitespace-nowrap text-gray-400 mr-4'
+  const commClasses = 'text-xs whitespace-nowrap text-gray-400 mr-4 select-none'
 
   return external ? (
     <div className={contClasses}>

@@ -1,18 +1,26 @@
 export const visits = () => {
-  let visits = localStorage.getItem('visitCounter')
+  if (typeof localStorage !== 'undefined') {
+    let visits = localStorage.getItem('visitCounter')
 
-  if (!visits) {
-    visits = '1'
-  } else {
-    visits = `${parseInt(visits) + 1}`
+    if (!visits) {
+      visits = '1'
+    }
+
+    localStorage.setItem('visitCounter', visits)
+
+    return visits
   }
 
-  localStorage.setItem('visitCounter', visits)
-
-  return visits
+  return 'Error!'
 }
 
-export const likes = () => localStorage.getItem('likeCounter') ?? '0'
+export const likes = () => {
+  if (typeof localStorage !== 'undefined') {
+    return localStorage.getItem('likeCounter')
+  }
+
+  return 'Error!'
+}
 
 export const toLike = (type: '+' | '-') => {
   let likes = localStorage.getItem('likeCounter')

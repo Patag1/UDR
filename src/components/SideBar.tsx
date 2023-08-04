@@ -1,6 +1,6 @@
 'use client'
 
-import { FC, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import SideBtn from '@/components/SideBtn'
 import {
   AiFillLinkedin,
@@ -18,6 +18,11 @@ interface SideBarProps {}
 
 const SideBar: FC<SideBarProps> = ({}) => {
   const [liked, setLiked] = useState(false)
+  const [isFixed, setIsFixed] = useState(true)
+
+  const handleScroll = () => {
+    setIsFixed(window.scrollY > 160)
+  }
 
   const handleLike = () => {
     if (liked) {
@@ -28,11 +33,19 @@ const SideBar: FC<SideBarProps> = ({}) => {
     setLiked(!liked)
   }
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+  
   const visit = visits()
 
   return (
     <section className="w-8">
-      <div className="fixed flex flex-col gap-2">
+      <div className={`${isFixed && 'fixed top-10'} flex flex-col gap-2`}>
         <SideBtn
           icon1={AiFillLinkedin}
           icon2={AiFillLinkedin}

@@ -16,6 +16,9 @@ const Title: FC<TitleProps> = ({}) => {
     case '/':
       text = 'Ultimate Dev Roadmap - UDR'
       break
+    case '/news':
+      text = 'Noticias'
+      break
     case '/apis':
       text = 'APIs'
       break

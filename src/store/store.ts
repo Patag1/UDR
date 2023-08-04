@@ -1,12 +1,12 @@
 import { create } from 'zustand'
 
-type Comment = {
+export type Comment = {
   name: string
   email: string
   message: string
 }
 
-type CommentDb = Comment & {
+export type CommentDb = Comment & {
   id: number
 }
 
@@ -23,7 +23,7 @@ export const useStore = create<useStoreProps>((set) => ({
   getComments: async () => {
     await fetch('/api/comments')
       .then((res) => res.json())
-      .then((data) => set({ comments: data }))
+      .then((data) => set({ comments: data.comments }))
       .catch(() => {})
   },
   postComment: async (data) => {

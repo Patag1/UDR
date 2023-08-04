@@ -84,7 +84,51 @@ const page: FC<pageProps> = ({}) => {
           href="https://vercel.com/docs/storage/vercel-postgres"
           label="🔼 Vercel Postgres"
           external
-          commentary="Beta"
+          commentary="beta"
+        />
+      </Subtitle>
+      <Subtitle title='Organización, colaboración y +'>
+        <Link
+          href="https://witeboard.com/"
+          label="👩‍🏫 Witeboard"
+          external
+          commentary="pizarra con coop"
+        />
+        <Link
+          href="https://www.programiz.com/javascript/online-compiler/"
+          label="🅿️ Programiz"
+          external
+          commentary="compilador online"
+        />
+        <Link
+          href="https://slack.com/"
+          label="📎 Slack"
+          external
+          commentary="organización"
+        />
+        <Link
+          href="https://slack.com/"
+          label="🔲 Notion"
+          external
+          commentary="organización"
+        />
+        <Link
+          href="https://trello.com/"
+          label="⏸️ Trello"
+          external
+          commentary="coordinación"
+        />
+        <Link
+          href="https://www.atlassian.com/es/software/jira"
+          label="🔼 Jira"
+          external
+          commentary="coordinación"
+        />
+        <Link
+          href="https://vercel.com/blog/introducing-the-vercel-ai-sdk"
+          label="🤖 Vercel AI"
+          external
+          commentary="SDK"
         />
       </Subtitle>
     </>

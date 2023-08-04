@@ -5,7 +5,6 @@ import SideBar from '@/components/SideBar'
 import Title from '@/components/Title'
 import Provider from '@/components/Provider'
 import Comments from '@/components/Comments'
-import Link from 'next/link'
 
 const inter = Nunito({ subsets: ['latin'] })
 
@@ -21,14 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Provider>
-        <body
-          className={`${inter.className} bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-50 transition-all`}
-        >
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
+      <body className={`${inter.className} bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-50 transition-all`}>
+        <Provider>
           <main className="w-fit mx-auto my-32 grid grid-rows-[min-content_1fr] grid-cols-1">
             <Title />
             <br />
-            <div className="grid grid-cols-[1fr_min-content] grid-rows-1 gap-2">
+            <div className="grid grid-cols-[1fr_min-content] grid-rows-1 gap-6">
               <div className="max-w-prose">
                 {children}
                 <br />
@@ -64,8 +64,8 @@ export default function RootLayout({
               <SideBar />
             </div>
           </main>
-        </body>
-      </Provider>
+        </Provider>
+      </body>
     </html>
   )
 }
