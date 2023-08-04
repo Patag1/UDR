@@ -1,0 +1,18 @@
+export const jobs = [
+    { url: 'http://linkedin.com', name: 'LinkedIn', type: true },
+    { url: 'https://www.fiverr.com/', name: 'Fiverr', type: true },
+    { url: 'https://www.upwork.com/', name: 'Upwork', type: true },
+    { url: 'https://www.workana.com/', name: 'Workana', type: true },
+    { url: 'http://turing.com', name: 'Turing', type: true },
+    { url: 'http://remote.co', name: 'Remote.co', type: true },
+    { url: 'http://remoteok.io', name: 'Remoteok' },
+    { url: 'http://remotive.io', name: 'Remotive' },
+    { url: 'http://flexjobs.com', name: 'Flexjobs' },
+    { url: 'http://justremote.co', name: 'Justremote' },
+    { url: 'http://remotefront.io', name: 'Remotefront' },
+    { url: 'http://powertofly.com', name: 'Powertofly' },
+    { url: 'http://skipthedrive.com', name: 'Skipthedrive' },
+    { url: 'http://authenticjobs.com', name: 'Authenticjobs' },
+    { url: 'https://ar.computrabajo.com/', name: 'Computrabajo', type: true, arg: true },
+    { url: 'https://trabajo.buenosaires.gob.ar/', name: 'TrabajoBA', type: true, arg: true },
+]

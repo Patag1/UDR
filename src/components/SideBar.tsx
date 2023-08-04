@@ -12,6 +12,7 @@ import {
 import { SiLinktree } from 'react-icons/si'
 import { BiLogoGmail } from 'react-icons/bi'
 import { likes, toLike, visits } from '@/lib/stats'
+import ThemeBtn from './ThemeBtn'
 
 interface SideBarProps {}
 
@@ -30,7 +31,7 @@ const SideBar: FC<SideBarProps> = ({}) => {
   const visit = visits()
 
   return (
-    <section className='w-8'>
+    <section className="w-8">
       <div className="fixed flex flex-col gap-2">
         <SideBtn
           icon1={AiFillLinkedin}
@@ -79,6 +80,8 @@ const SideBar: FC<SideBarProps> = ({}) => {
           label={visit}
           onClick={() => {}}
         />
+        <div></div>
+        <ThemeBtn />
       </div>
     </section>
   )

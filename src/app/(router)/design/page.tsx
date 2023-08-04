@@ -30,10 +30,12 @@ const page: FC<pageProps> = ({}) => {
         />
       </Subtitle>
       <Subtitle title="Buscando inspiración?">
-        <div className="flex items-center">
-          <Link href="https://www.awwwards.com/" label="Awwwards 🏆" external />
-          <p className="text-gray-400 text-sm">recurso 🔥</p>
-        </div>
+        <Link
+          href="https://www.awwwards.com/"
+          label="Awwwards 🏆"
+          external
+          commentary="recurso 🔥"
+        />
       </Subtitle>
       <Subtitle title="Potpourrit">
         <Link href="https://uigoodies.com/" label="UI Goodies 🍲" external />

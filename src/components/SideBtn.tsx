@@ -28,7 +28,7 @@ const SideBtn: FC<SideBtnProps> = ({
         <a
           href={link}
           target="_blank"
-          className="w-fit p-1 bg-gray-100 border-2 border-gray-800 drop-shadow-btn rounded-md active:translate-x-1 active:translate-y-1 active:drop-shadow-none transition-all"
+          className="w-fit p-1 bg-gray-100 dark:bg-gray-800 text-gray-800 border-2 border-gray-800 dark:border-gray-100 dark:text-gray-100 drop-shadow-btn dark:drop-shadow-drk rounded-md active:translate-x-1 active:translate-y-1 active:drop-shadow-none transition-all"
         >
           {iconBool ? <Icon2 /> : <Icon1 />}
         </a>
@@ -42,7 +42,7 @@ const SideBtn: FC<SideBtnProps> = ({
   return (
     <div className='relative flex w-fit [&>span]:hover:-translate-y-4 [&>span]:hover:opacity-100'>
         <button
-        className={`w-fit p-1 bg-gray-100 border-2 border-gray-800 drop-shadow-btn rounded-md ${
+        className={`w-fit p-1 bg-gray-100 dark:bg-gray-800 border-2 border-gray-800 dark:border-gray-100 drop-shadow-btn dark:drop-shadow-drk rounded-md ${
             clickable
             ? 'active:translate-x-1 active:translate-y-1 active:drop-shadow-none'
             : 'cursor-default'

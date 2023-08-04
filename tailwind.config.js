@@ -5,6 +5,7 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: ['class'],
   theme: {
     extend: {
       backgroundImage: {
@@ -14,6 +15,7 @@ module.exports = {
       },
       dropShadow: {
         'btn': '2px 2px 0 rgb(31, 41, 55, 1)',
+        'drk': '2px 2px 0 rgb(243, 244, 246, 1)',
       }
     },
   },

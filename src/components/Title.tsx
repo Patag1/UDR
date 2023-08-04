@@ -14,7 +14,7 @@ const Title: FC<TitleProps> = ({}) => {
 
   switch (path) {
     case '/':
-      text = 'Ultimate dev roadmap'
+      text = 'Ultimate Dev Roadmap - UDR'
       break
     case '/apis':
       text = 'APIs'
@@ -37,6 +37,9 @@ const Title: FC<TitleProps> = ({}) => {
     case '/other':
       text = 'Otros recursos'
       break
+    case '/jobs':
+      text = 'Trabajo remoto'
+      break
     default:
       break
   }
@@ -45,12 +48,12 @@ const Title: FC<TitleProps> = ({}) => {
     <div className="relative flex justify-between items-center">
       {
         path !== '/' && (
-          <Link href={'/'} className='h-fit w-fit absolute top-1/2 bottom-1/2 -translate-y-1/2 -left-10 p-1 text-2xl'>
+          <Link href={'/'} className='h-fit w-fit absolute top-1/2 bottom-1/2 -translate-y-1/2 -left-14 p-1 text-4xl'>
             <BsArrowLeftShort />
           </Link>
         )
       }
-      <h1 className="text-4xl text-gray-800 font-extrabold">{text}</h1>
+      <h1 className="text-4xl font-extrabold">{text}</h1>
       <div className="relative [&>span]:hover:opacity-100 [&>span]:hover:-translate-y-4">
         <Image
           src={'/profile-pic.png'}

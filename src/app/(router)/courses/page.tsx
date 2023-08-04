@@ -17,9 +17,10 @@ const page: FC<pageProps> = ({}) => {
       <ul className="indent-4">
         {courses.map((c, i) => (
           <li key={i} className='flex items-center'>
-            <Link href={c.url} label={c.name} external />
-            {c.name === 'Harvard CS50 🦆' && (
-              <p className="text-gray-400 text-sm">recurso 🔥</p>
+            {c.name === '🦆 Harvard CS50' ? (
+              <Link href={c.url} label={c.name} external commentary='recurso 🔥' />
+            ) : (
+              <Link href={c.url} label={c.name} external />
             )}
           </li>
         ))}
