@@ -14,10 +14,11 @@ const PostComment: FC<PostCommentProps> = ({}) => {
     watch,
     handleSubmit,
   } = useForm()
+
   const { postComment } = useStore()
 
   const handleChange = (e: React.FormEvent<HTMLTextAreaElement>) => {
-    setChars(e.currentTarget.value.length)
+    setChars(e.currentTarget?.value?.length)
   }
 
   const onSubmit = (data: FieldValues) => {
@@ -34,9 +35,13 @@ const PostComment: FC<PostCommentProps> = ({}) => {
             required: true,
           })}
           placeholder="Nombre"
-          className="px-2 py-1 rounded-sm bg-transparent focus:bg-gray-300 focus:bg-opacity-20 border-2 border-gray-800 dark:border-gray-100 focus:outline-none focus:rounded-md placeholder:text-gray-400 focus:placeholder:opacity-0 transition-all"
+          className={`px-2 py-1 ${
+            errors?.name?.type === 'required'
+              ? 'border-rose-400'
+              : 'border-gray-800 dark:border-gray-100'
+          } rounded-sm bg-transparent focus:bg-gray-300 focus:bg-opacity-20 border-2 focus:outline-none focus:rounded-md placeholder:text-gray-400 focus:placeholder:opacity-0 transition-all`}
         />
-        {errors.name?.type === 'required' && (
+        {errors?.name?.type === 'required' && (
           <span className="text-xs text-rose-400">requerido</span>
         )}
         <input
@@ -46,27 +51,33 @@ const PostComment: FC<PostCommentProps> = ({}) => {
             pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i,
           })}
           placeholder="Email"
-          className="px-2 py-1 rounded-sm bg-transparent focus:bg-gray-300 focus:bg-opacity-20 border-2 border-gray-800 dark:border-gray-100 focus:outline-none focus:rounded-md placeholder:text-gray-400 focus:placeholder:opacity-0 transition-all"
+          className={`px-2 py-1 rounded-sm bg-transparent focus:bg-gray-300 focus:bg-opacity-20 border-2 ${
+            errors?.email?.type === 'pattern' ||
+            errors?.email?.type === 'required'
+              ? 'text-rose-400 border-rose-400'
+              : 'border-gray-800 dark:border-gray-100'
+          } focus:outline-none focus:rounded-md placeholder:text-gray-400 focus:placeholder:opacity-0 transition-all`}
         />
-        {errors.email?.type === 'pattern' && (
+        {errors?.email?.type === 'pattern' && (
           <span className="text-xs text-rose-400">email invalido</span>
         )}
-        {errors.email?.type === 'required' && (
+        {errors?.email?.type === 'required' && (
           <span className="text-xs text-rose-400">requerido</span>
         )}
-        <div className="relative w-full">
+        <div className="relative w-full h-fit">
           <textarea
             {...register('message', {
               required: true,
             })}
             rows={4}
             onChange={handleChange}
-            className="w-full px-2 py-1 rounded-sm bg-transparent focus:bg-gray-300 focus:bg-opacity-20 border-2 border-gray-800 dark:border-gray-100 focus:outline-none focus:rounded-md placeholder:text-gray-400 focus:placeholder:opacity-0 transition-all resize-none"
+            className={`w-full -mb-2 px-2 py-1 ${chars > 250 && 'text-rose-400'} ${
+              errors?.message?.type === 'required'
+                ? 'border-rose-400'
+                : 'border-gray-800 dark:border-gray-100'
+            } rounded-sm bg-transparent focus:bg-gray-300 focus:bg-opacity-20 border-2 focus:outline-none focus:rounded-md placeholder:text-gray-400 focus:placeholder:opacity-0 transition-all resize-none`}
             placeholder="Mensaje"
           />
-          {errors.message?.type === 'required' && (
-            <span className="text-xs text-rose-400">requerido</span>
-          )}
           <span
             className={`absolute bottom-3 right-2 z-10 ${
               chars > 250 ? 'text-rose-400' : 'text-gray-400'
@@ -75,6 +86,9 @@ const PostComment: FC<PostCommentProps> = ({}) => {
             {chars}/250
           </span>
         </div>
+        {errors?.message?.type === 'required' && (
+          <span className="text-xs text-rose-400">requerido</span>
+        )}
         <button
           type="submit"
           className="my-2 py-2 border-2 border-gray-800 dark:border-gray-100 rounded-md bg-green-400 drop-shadow-btn dark:drop-shadow-drk dark:text-gray-800 font-extrabold hover:brightness-105 active:translate-x-1 active:translate-y-1 active:drop-shadow-none disabled:opacity-75 disabled:hover:brightness-100 disabled:active:translate-x-0 disabled:active:translate-y-0 disabled:active:drop-shadow-btn dark:disabled:active:drop-shadow-drk transition-all"

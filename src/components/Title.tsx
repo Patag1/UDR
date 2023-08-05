@@ -49,13 +49,14 @@ const Title: FC<TitleProps> = ({}) => {
 
   return (
     <div className="relative flex justify-between items-center">
-      {
-        path !== '/' && (
-          <Link href={'/'} className='h-fit w-fit absolute top-1/2 bottom-1/2 -translate-y-1/2 -left-14 p-1 text-4xl'>
-            <BsArrowLeftShort />
-          </Link>
-        )
-      }
+      {path !== '/' && (
+        <Link
+          href={'/'}
+          className="h-fit w-fit absolute top-1/2 bottom-1/2 -translate-y-1/2 -left-14 p-1 text-4xl"
+        >
+          <BsArrowLeftShort />
+        </Link>
+      )}
       <h1 className="text-4xl font-extrabold">{text}</h1>
       <div className="relative [&>span]:hover:opacity-100 [&>span]:hover:-translate-y-4">
         <Image

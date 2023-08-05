@@ -5,35 +5,32 @@ import SideBtn from '@/components/SideBtn'
 import {
   AiFillLinkedin,
   AiFillGithub,
-  AiOutlineHeart,
-  AiFillHeart,
-  AiOutlineEye,
+  // AiOutlineHeart,
+  // AiFillHeart,
+  // AiOutlineEye,
 } from 'react-icons/ai'
 import { SiLinktree } from 'react-icons/si'
 import { BiLogoGmail } from 'react-icons/bi'
-import { likes, toLike, visits } from '@/lib/stats'
+// import { likes, toLike, visits } from '@/lib/stats'
 import ThemeBtn from './ThemeBtn'
 
 interface SideBarProps {}
 
 const SideBar: FC<SideBarProps> = ({}) => {
-  const [liked, setLiked] = useState(false)
+  // const [liked, setLiked] = useState(false)
   const [isFixed, setIsFixed] = useState(true)
 
-  const handleScroll = () => {
-    setIsFixed(window.scrollY > 160)
-  }
-
-  const handleLike = () => {
-    if (liked) {
-      toLike('-')
-    } else {
-      toLike('+')
-    }
-    setLiked(!liked)
-  }
+  // const handleLike = () => {
+  //   toLike(liked ? '-' : '+')
+  //   setLiked(!liked)
+  // }
+  // const visit = visits()
 
   useEffect(() => {
+    const handleScroll = () => {
+      setIsFixed(window.scrollY > 160)
+    }
+
     window.addEventListener('scroll', handleScroll)
   
     return () => {
@@ -41,10 +38,8 @@ const SideBar: FC<SideBarProps> = ({}) => {
     }
   }, [])
   
-  const visit = visits()
-
   return (
-    <section className="w-8">
+    <div className="w-8">
       <div className={`${isFixed && 'fixed top-10'} flex flex-col gap-2`}>
         <SideBtn
           icon1={AiFillLinkedin}
@@ -78,7 +73,7 @@ const SideBar: FC<SideBarProps> = ({}) => {
           label="Linktree"
           onClick={() => {}}
         />
-        <div></div>
+        {/* <div></div>
         <SideBtn
           icon1={AiOutlineHeart}
           icon2={AiFillHeart}
@@ -92,11 +87,11 @@ const SideBar: FC<SideBarProps> = ({}) => {
           icon2={AiOutlineEye}
           label={visit}
           onClick={() => {}}
-        />
+        /> */}
         <div></div>
         <ThemeBtn />
       </div>
-    </section>
+    </div>
   )
 }
 

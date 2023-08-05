@@ -6,7 +6,7 @@ import Title from '@/components/Title'
 import Provider from '@/components/Provider'
 import Comments from '@/components/Comments'
 
-const inter = Nunito({ subsets: ['latin'] })
+const nunito = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'UDR',
@@ -24,10 +24,10 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body
-        className={`${inter.className} bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-50 transition-all`}
+        className={`${nunito.className} bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-50 transition-all`}
       >
         <Provider>
-          <main className="w-fit mx-auto my-32 grid grid-rows-[min-content_1fr] grid-cols-1">
+          <main className="w-fit mx-auto px-4 my-32 grid grid-rows-[min-content_1fr] grid-cols-1">
             <Title />
             <br />
             <div className="grid grid-cols-[1fr_min-content] grid-rows-1 gap-6">
