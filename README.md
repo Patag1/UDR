@@ -1,34 +1,49 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Ultimate Dev Roadmap
 
-First, run the development server:
+Este proyecto tiene como objetivo recopilar una lista curada de recursos útiles para desarrolladores, con el propósito de ayudarlos en su aprendizaje y crecimiento profesional. Acá podes encontrar una amplia variedad de recursos, desde cursos y videos hasta APIs y herramientas, que abarcan diferentes áreas de desarrollo de software. La idea era tener algo en español ya que hay demasiado contenido en inglés. Espero que le sirva a alguien tratando de sobrevivir sin saber inglés! (pero aprendan inglés 😭)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+```ts
+const learning = true
+while (learning) {
+  haveFun()
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Cómo contribuir?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Tu contribución es bienvenida y valorada! Ayudemos a más gente a tener un recurso de calidad en español! Si querés agregar nuevos recursos o mejorar la lista existente, seguí estos pasos:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Hacer un fork de este repositorio.
+- Clonar el repositorio en tu pc local.
 
-## Learn More
+```bash
+git clone https://github.com/Patag1/UDR.git
+```
 
-To learn more about Next.js, take a look at the following resources:
+- Agregar tus recursos en el archivo README.md con el siguiente formato:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+- [Título del Recurso](URL del Recurso) - Descripción breve del recurso. [Tu Usuario de GitHub](URL de tu Perfil)
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Hacer commit con tus cambios.
 
-## Deploy on Vercel
+```bash
+git add .
+git commit -m "Agregar nuevos recursos: nombre1, nombre2, ..."
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Hacer push a tu repositorio.
+- Crear pull request en este repositorio.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Notas
+
+Este proyecto es de código abierto, por lo que se incentiva la colaboración de la comunidad de desarrolladores. Si tenés sugerencias para mejorar la organización o cualquier otra idea que pueda beneficiar a la comunidad, sentite libre de abrir un issue o discutirlo en la sección de comentarios.
+
+Gracias por tu contribución y esperamos que esta lista de recursos sea útil para todos los desarrolladores que buscan mejorar sus habilidades y conocimientos!
+
+## Recursos adicionados por la comunidad
+
+// Tu contribución acá...
