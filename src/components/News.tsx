@@ -17,13 +17,13 @@ const News: FC<NewsProps> = ({}) => {
       {news.map((art, i) => (
         <div className="w-96 aspect-video" key={i}>
           <h1>{art?.title}</h1>
-          <img
+          {/* <img
             src={art.urlToImage}
             alt="pic"
             width={384}
             height={300}
             className="object-cover aspect-video"
-          />
+          /> */}
         </div>
       ))}
     </div>
