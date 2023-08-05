@@ -24,9 +24,11 @@ export default function Home() {
         <Link href="/jobs" label="Trabajo remoto" commentary="a pescar 🎣" />
       </div>
       <br />
-      <h4 className='my-4 font-extrabold text-xl'>Playlist exclusiva para devs</h4>
+      <h4 className="my-4 font-extrabold text-xl">
+        Playlist exclusiva para devs
+      </h4>
       <iframe
-        className='rounded-xl'
+        className="rounded-xl"
         src="https://open.spotify.com/embed/playlist/66cYkZTFtuwp17Q53KR8qn?utm_source=generator"
         width="100%"
         height="352"
