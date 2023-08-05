@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+---
+<br>
+
+<p align="center">
+  <img src="./public/favicon-32x32.png" alt="logo">
+</p>
+
 ## Ultimate Dev Roadmap
 
 Este proyecto tiene como objetivo recopilar una lista curada de recursos útiles para desarrolladores, con el propósito de ayudarlos en su aprendizaje y crecimiento profesional. Acá podes encontrar una amplia variedad de recursos, desde cursos y videos hasta APIs y herramientas, que abarcan diferentes áreas de desarrollo de software. La idea era tener algo en español ya que hay demasiado contenido en inglés. Espero que le sirva a alguien tratando de sobrevivir sin saber inglés! (pero aprendan inglés 😭)
