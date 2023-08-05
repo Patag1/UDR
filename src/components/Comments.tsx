@@ -20,8 +20,8 @@ const Comments: FC<CommentsProps> = ({}) => {
 
   return (
     <div className={`mt-6 w-full ${path !== '/' && 'hidden'}`} id="comm">
-      <h4 className="mb-4 font-extrabold text-xl">
-        Comentarios{'  '}
+      <h4 className="mb-4 flex justify-start items-center gap-2 font-extrabold text-xl">
+        Comentarios
         <span className="text-xs text-gray-400">
           ({comments.length ?? '0'})
         </span>

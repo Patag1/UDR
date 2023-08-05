@@ -64,6 +64,9 @@ export default function RootLayout({
               <SideBar />
             </div>
           </main>
+          <aside className='w-32 fixed top-32 bottom-8 left-48'>
+            {/* ADS */}
+          </aside>
         </Provider>
       </body>
     </html>
