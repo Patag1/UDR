@@ -2,7 +2,7 @@
 
 import { useStore } from '@/store/store'
 import { FC, useState } from 'react'
-import { useForm } from 'react-hook-form'
+import { useForm, FieldValues } from 'react-hook-form'
 
 interface PostCommentProps {}
 
@@ -20,7 +20,7 @@ const PostComment: FC<PostCommentProps> = ({}) => {
     setChars(e.currentTarget.value.length)
   }
 
-  const onSubmit = (data: Comment) => {
+  const onSubmit = (data: FieldValues) => {
     postComment(data)
   }
 
@@ -43,7 +43,7 @@ const PostComment: FC<PostCommentProps> = ({}) => {
           type="email"
           {...register('email', {
             required: true,
-            pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i
+            pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i,
           })}
           placeholder="Email"
           className="px-2 py-1 rounded-sm bg-transparent focus:bg-gray-300 focus:bg-opacity-20 border-2 border-gray-800 dark:border-gray-100 focus:outline-none focus:rounded-md placeholder:text-gray-400 focus:placeholder:opacity-0 transition-all"

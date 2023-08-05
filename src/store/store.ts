@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import { FieldValues } from 'react-hook-form'
 
 export type Comment = {
   name: string
@@ -13,7 +14,7 @@ export type CommentDb = Comment & {
 interface useStoreProps {
   comments: CommentDb[] | []
   getComments: () => Promise<void>
-  postComment: (data: Comment) => Promise<void>
+  postComment: (data: FieldValues) => Promise<void>
   putComment: (id: number, data: Comment) => Promise<void>
   delComment: (id: number) => Promise<void>
 }
