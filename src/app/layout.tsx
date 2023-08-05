@@ -23,7 +23,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={`${inter.className} bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-50 transition-all`}>
+      <body
+        className={`${inter.className} bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-50 transition-all`}
+      >
         <Provider>
           <main className="w-fit mx-auto my-32 grid grid-rows-[min-content_1fr] grid-cols-1">
             <Title />
@@ -64,7 +66,7 @@ export default function RootLayout({
               <SideBar />
             </div>
           </main>
-          <aside className='w-32 fixed top-32 bottom-8 left-48'>
+          <aside className="w-32 fixed top-32 bottom-8 left-48">
             {/* ADS */}
           </aside>
         </Provider>
