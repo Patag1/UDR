@@ -44,4 +44,6 @@ Este proyecto es de código abierto, por lo que se incentiva la colaboración de
 
 Gracias por tu contribución y esperamos que esta lista de recursos sea útil para todos los desarrolladores que buscan mejorar sus habilidades y conocimientos!
 
-Recursos adicionados por la comunidad
+## Recursos adicionados por la comunidad
+
+// Tu contribución acá...
