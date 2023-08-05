@@ -15,8 +15,8 @@ while (learning) {
 
 Tu contribución es bienvenida y valorada! Ayudemos a más gente a tener un recurso de calidad en español! Si querés agregar nuevos recursos o mejorar la lista existente, seguí estos pasos:
 
-- Hacer un Fork de este repositorio.
-- Clonar el repositorio en tu máquina local.
+- Hacer un fork de este repositorio.
+- Clonar el repositorio en tu pc local.
 
 ```bash
 git clone https://github.com/Patag1/UDR.git
@@ -25,10 +25,10 @@ git clone https://github.com/Patag1/UDR.git
 - Agregar tus recursos en el archivo README.md con el siguiente formato:
 
 ```
-- [Título del Recurso](URL del Recurso) - Descripción breve del recurso.
+- [Título del Recurso](URL del Recurso) - Descripción breve del recurso. [Tu Usuario de GitHub](URL de tu Perfil)
 ```
 
-- Hacer un commit con tus cambios.
+- Hacer commit con tus cambios.
 
 ```bash
 git add .
@@ -36,10 +36,12 @@ git commit -m "Agregar nuevos recursos: nombre1, nombre2, ..."
 ```
 
 - Hacer push a tu repositorio.
-- Crear un Pull Request en este repositorio.
+- Crear pull request en este repositorio.
 
 ## Notas
 
 Este proyecto es de código abierto, por lo que se incentiva la colaboración de la comunidad de desarrolladores. Si tenés sugerencias para mejorar la organización o cualquier otra idea que pueda beneficiar a la comunidad, sentite libre de abrir un issue o discutirlo en la sección de comentarios.
 
 Gracias por tu contribución y esperamos que esta lista de recursos sea útil para todos los desarrolladores que buscan mejorar sus habilidades y conocimientos!
+
+Recursos adicionados por la comunidad
