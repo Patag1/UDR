@@ -56,6 +56,13 @@ const page: FC<pageProps> = ({}) => {
           external
         />
       </Subtitle>
+      <Subtitle title='Libros'>
+        <Link
+          href="jsbooks.revolunet.com"
+          label="🟨 Javascript"
+          external
+        />
+      </Subtitle>
     </>
   )
 }
