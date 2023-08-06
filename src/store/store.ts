@@ -24,7 +24,7 @@ export const useStore = create<useStoreProps>((set) => ({
   getComments: async () => {
     await fetch('/api/comments')
       .then((res) => res.json())
-      .then((data) => set({ comments: data.comments }))
+      .then(({ comments }) => set({ comments }))
       .catch(() => {})
   },
   postComment: async (data) => {

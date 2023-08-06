@@ -62,6 +62,7 @@ export default function RootLayout({
                   como centro de recursos personales.
                 </p>
                 <Comments />
+                <p className="w-full mt-4 text-center text-xs text-gray-400"></p>
               </div>
               <SideBar />
             </div>
