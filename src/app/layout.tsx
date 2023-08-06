@@ -4,7 +4,7 @@ import { Nunito } from 'next/font/google'
 import SideBar from '@/components/SideBar'
 import Title from '@/components/Title'
 import Provider from '@/components/Provider'
-import Comments from '@/components/Comments'
+// import Comments from '@/components/Comments'
 import Link from 'next/link'
 
 const nunito = Nunito({ subsets: ['latin'] })
