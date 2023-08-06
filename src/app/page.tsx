@@ -3,16 +3,20 @@ import Link from '@/components/Link'
 export default function Home() {
   return (
     <>
-      <p>
-        Este proyecto personal es un dump de todos los recursos/fuentes que
-        personalmente encontré muy útil y me ayudaron a entender un poquito más
-        del mundo de la programación.
-        <br /><br />
-        <span className="text-rose-400">Nota</span>: todavía hay problemas de
-        renderizado, esperen ver unos pocos bugs
-        <br />
-        Se puede encontrar de todo, algunas de las cosas que podés encontrar:
-      </p>
+      <div>
+        <p>
+          Este proyecto personal es un dump de todos los recursos/fuentes que
+          personalmente encontré muy útil y me ayudaron a entender un poquito
+          más del mundo de la programación.
+        </p>
+        <p>
+          <span className="text-rose-400">Nota</span>: todavía hay problemas de
+          renderizado, esperen ver unos pocos bugs
+        </p>
+        <p>
+          Se puede encontrar de todo, algunas de las cosas que podés encontrar:
+        </p>
+      </div>
       <br />
       <div className="indent-4">
         {/* <Link href="/" label="Noticias" commentary="en construcción" />
