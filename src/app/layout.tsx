@@ -55,7 +55,7 @@ export default function RootLayout({
                     className="text-cyan-500 hover:underline underline-offset-2"
                   >
                     repositorio
-                  </a>{' '}
+                  </a>{/*{' '}
                   o{' '}
                   <a
                     href="/"
@@ -63,7 +63,7 @@ export default function RootLayout({
                   >
                     dejar un comentario
                   </a>{' '}
-                  con tu feedback. Además sentite libre de utilizar esta página
+                  con tu feedback*/}. Además sentite libre de utilizar esta página
                   como centro de recursos personales.
                 </p>
                 {/* <Comments /> */}
