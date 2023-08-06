@@ -6,7 +6,9 @@ export default function Home() {
       <p>
         Este proyecto personal es un dump de todos los recursos/fuentes que
         personalmente encontré muy útil y me ayudaron a entender un poquito más
-        del mundo de la programación. Se puede encontrar de todo, algunas de las
+        del mundo de la programación.<br />
+        <span>Nota</span>: todavía hay problemas de renderizado, esperen ver unos pocos bugs<br />
+        Se puede encontrar de todo, algunas de las
         cosas que podés encontrar:
       </p>
       <br />
