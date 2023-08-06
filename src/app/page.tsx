@@ -7,7 +7,7 @@ export default function Home() {
         Este proyecto personal es un dump de todos los recursos/fuentes que
         personalmente encontré muy útil y me ayudaron a entender un poquito más
         del mundo de la programación.
-        <br />
+        <br /><br />
         <span className="text-rose-400">Nota</span>: todavía hay problemas de
         renderizado, esperen ver unos pocos bugs
         <br />
