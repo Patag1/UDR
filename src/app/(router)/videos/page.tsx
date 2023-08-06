@@ -25,7 +25,7 @@ const page: FC<pageProps> = ({}) => {
           external
         />
       </Subtitle>
-      <Subtitle title='Front-End - freecodecamp 🔥'>
+      <Subtitle title='Front-End'>
         <Link
           href='https://www.youtube.com/watch?v=ivdTnPl1ND0&pp=ygUKamF2YXNjcmlwdA%3D%3D'
           label='🟨 Javascript'
@@ -33,16 +33,23 @@ const page: FC<pageProps> = ({}) => {
         />
         <Link
           href='https://www.youtube.com/watch?v=30LWjhZzg50'
-          label='🟦 Typescript (EN)'
+          label='🟦 Typescript'
           external
+          commentary='inglés'
         />
         <Link
           href='https://www.youtube.com/watch?v=6Jfk8ic3KVk&t=5450s'
           label='*️⃣ React'
           external
         />
+        <Link
+          href='https://www.youtube.com/watch?v=obH0Po_RdWk&pp=ygUicmVhY3QgbmF0aXZlIHR1dG9yaWFsIGZyZWVjb2RlY2FtcA%3D%3D'
+          label='📱 React Native'
+          external
+          commentary='app móvil'
+        />
       </Subtitle>
-      <Subtitle title='Back-End - freecodecamp 🔥'>
+      <Subtitle title='Back-End'>
         <Link
           href='https://www.youtube.com/watch?v=1hpc70_OoAg'
           label='🟢 Node + Express'
@@ -67,7 +74,7 @@ const page: FC<pageProps> = ({}) => {
           external
         />
       </Subtitle>
-      <Subtitle title='Full-Stack - difícil 🔥 (EN)'>
+      <Subtitle title='Full-Stack - (EN)'>
         <Link
           href='https://www.youtube.com/watch?v=5miHyP6lExg&pp=ygUWbmV4dCBqcyBmdWxsIHN0YWNrIGFwcA%3D%3D'
           label='👕 E-commerce'
@@ -82,6 +89,37 @@ const page: FC<pageProps> = ({}) => {
           href='https://www.youtube.com/watch?v=mSUKMfmLAt0&pp=ygUabmV4dCBqcyB0dXRvcmlhbCBlc3Bhw7FvbCA%3D'
           label='🤖 Clon Reddit'
           external
+        />
+      </Subtitle>
+      <div className='mx-4 mb-2 border-b-2 border-gray-400'></div>
+      <Subtitle title='Otros lenguajes en auge - (EN)'>
+        <Link
+          href='https://www.youtube.com/watch?v=rfscVS0vtbw&t=13470s&pp=ygUTcHl0aG9uIGZyZWVjb2RlY2FtcA%3D%3D'
+          label='🐍 Python'
+          external
+        />
+        <Link
+          href='https://www.youtube.com/watch?v=t_ispmWmdjY&pp=ygURcnVieSBmcmVlY29kZWNhbXA%3D'
+          label='💎 Ruby'
+          external
+        />
+        <Link
+          href='https://www.youtube.com/watch?v=un6ZyFkqFKo&pp=ygUPZ28gZnJlZWNvZGVjYW1w'
+          label='🦫 Go'
+          external
+          commentary='+ proyectos'
+        />
+        <Link
+          href='https://www.youtube.com/watch?v=EExSSotojVI&pp=ygUTa290bGluIGZyZWVjb2RlY2FtcA%3D%3D'
+          label='⏫ Kotlin'
+          external
+          commentary='🤖 Android'
+        />
+        <Link
+          href='https://www.youtube.com/watch?v=8Xg7E9shq0U&pp=ygUSc3dpZnQgZnJlZWNvZGVjYW1w'
+          label='🐦 Swift'
+          external
+          commentary='IOS'
         />
       </Subtitle>
       <br />

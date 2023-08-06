@@ -18,7 +18,7 @@ interface SideBarProps {}
 
 const SideBar: FC<SideBarProps> = ({}) => {
   // const [liked, setLiked] = useState(false)
-  const [isFixed, setIsFixed] = useState(true)
+  const [isFixed, setIsFixed] = useState(false)
 
   // const handleLike = () => {
   //   toLike(liked ? '-' : '+')
@@ -30,7 +30,6 @@ const SideBar: FC<SideBarProps> = ({}) => {
     const handleScroll = () => {
       setIsFixed(window.scrollY > 160)
     }
-
     window.addEventListener('scroll', handleScroll)
   
     return () => {

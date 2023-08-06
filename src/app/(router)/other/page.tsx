@@ -56,9 +56,23 @@ const page: FC<pageProps> = ({}) => {
           external
         />
       </Subtitle>
+      <Subtitle title='Útiles'>
+        <Link
+          href='https://10minutemail.com/'
+          label="📨 10minutemail"
+          external
+          commentary="chau spam"
+        />
+        <Link
+          href='https://alternativeto.net/'
+          label="🔄️ AlternativeTo"
+          external
+          commentary="encontrá apps homónimas"
+        />
+      </Subtitle>
       <Subtitle title='Libros'>
         <Link
-          href="jsbooks.revolunet.com"
+          href="https://jsbooks.revolunet.com/"
           label="🟨 Javascript"
           external
         />

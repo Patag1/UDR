@@ -24,7 +24,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body
-        className={`${nunito.className} bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-50 transition-all`}
+        className={`${nunito.className} bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-50 transition-all`}
       >
         <Provider>
           <main className="w-fit mx-auto px-4 my-32 grid grid-rows-[min-content_1fr] grid-cols-1">
@@ -62,7 +62,11 @@ export default function RootLayout({
                   como centro de recursos personales.
                 </p>
                 <Comments />
-                <p className="w-full mt-4 text-center text-xs text-gray-400"></p>
+                <div className='w-full flex justify-center items-center'>
+                  <p className="w-1/2 mt-4 text-center text-xs text-gray-400">
+                    Cada feedback que da una persona ayuda a salvar a las ballenas contra la caza indiscriminada, xd
+                  </p>
+                </div>
               </div>
               <SideBar />
             </div>

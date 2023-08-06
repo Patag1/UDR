@@ -13,6 +13,7 @@ export default function Home() {
       <div className="indent-4">
         {/* <Link href="/" label="Noticias" commentary="en construcción" />
             <div className="my-2 mx-auto w-11/12 border-b-2 border-gray-400"></div> */}
+        <Link href="/ais" label="IAs" />
         <Link href="/apis" label="APIs" />
         <Link href="/courses" label="Cursos" />
         <Link href="/videos" label="Videos" />
