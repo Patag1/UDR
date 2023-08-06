@@ -56,7 +56,8 @@ export default function RootLayout({
                     className="text-cyan-500 hover:underline underline-offset-2"
                   >
                     repositorio
-                  </a>{/*{' '}
+                  </a>
+                  {/*{' '}
                   o{' '}
                   <a
                     href="/"
@@ -64,24 +65,27 @@ export default function RootLayout({
                   >
                     dejar un comentario
                   </a>{' '}
-                  con tu feedback*/}. Además sentite libre de utilizar esta página
-                  como centro de recursos personales.
+                  con tu feedback*/}
+                  . Además sentite libre de utilizar esta página como centro de
+                  recursos personales.
                 </p>
                 {/* <Comments /> */}
-                <div className="w-full flex justify-center items-center">
+                <div className="w-full flex flex-col justify-center items-center">
                   <p className="w-1/2 mt-4 text-center text-xs text-gray-400">
                     Cada feedback que da una persona ayuda a salvar a las
                     ballenas contra la caza indiscriminada, xd
                   </p>
-                  <Link href={'/privacy'} className='text-cyan-500 text-xs'>Política de Privacidad</Link>
+                  <Link
+                    href={'/privacy'}
+                    className="text-cyan-500 hover:underline text-xs"
+                  >
+                    Política de Privacidad
+                  </Link>
                 </div>
               </div>
               <SideBar />
             </div>
           </main>
-          <aside className="w-32 fixed top-32 bottom-8 left-48">
-            {/* ADS */}
-          </aside>
         </Provider>
       </body>
     </html>

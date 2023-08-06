@@ -46,6 +46,9 @@ const Title: FC<TitleProps> = ({}) => {
     case '/jobs':
       text = 'Trabajo remoto'
       break
+    case '/privacy':
+      text = 'Política de Privacidad'
+      break
     default:
       break
   }
