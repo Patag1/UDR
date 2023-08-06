@@ -11,7 +11,7 @@ export default function Home() {
         </p>
         <p>
           <span className="text-rose-400">Nota</span>: todavía hay problemas de
-          renderizado, esperen ver unos pocos bugs
+          renderizado, esperen ver unos pocos bugs.
         </p>
         <p>
           Se puede encontrar de todo, algunas de las cosas que podés encontrar:
