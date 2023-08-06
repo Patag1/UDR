@@ -9,11 +9,13 @@ const page: FC<pageProps> = ({}) => {
       <p>
         Fecha de última actualización: 06-Ago-2023
         <br />
+        <br />
         Bienvenido/a a Ultimate Dev Roadmap - UDR. Esta política de privacidad
         tiene como objetivo informarte sobre cómo recopilamos, utilizamos,
         almacenamos y protegemos los datos personales que puedan ser recopilados
         en el futuro, así como tus derechos como usuario en relación con tus
         datos personales.
+        <br />
         <br />
         <span className="text-rose-400">Nota</span>: No se recolectará ningún
         tipo de dato en cuanto no haya autenticación del usuario (creación de un
@@ -119,7 +121,8 @@ const page: FC<pageProps> = ({}) => {
           reflejar cambios en las prácticas de protección de datos de Ultimate
           Dev Roadmap - UDR. Te recomendamos revisar periódicamente esta página
           para estar informado sobre cualquier actualización.
-          <br />
+        </p>
+        <p>
           Recuerda que el uso de Ultimate Dev Roadmap - UDR implica tu
           aceptación de esta política de privacidad. Si no estás de acuerdo con
           alguno de sus términos, te recomendamos abstenerse de utilizar el
