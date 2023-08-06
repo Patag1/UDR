@@ -29,7 +29,7 @@ Tu contribución es bienvenida y valorada! Ayudemos a más gente a tener un recu
 git clone https://github.com/Patag1/UDR.git
 ```
 
-- Agregar tus recursos en el archivo README.md con el siguiente formato:
+- Agregar tus recursos en el archivo README.md con el siguiente formato (tu usuario es opcional!):
 
 ```
 - [Título del Recurso](URL del Recurso) - Descripción breve del recurso. [Tu Usuario de GitHub](URL de tu Perfil)
