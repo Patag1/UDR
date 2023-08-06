@@ -5,6 +5,7 @@ import SideBar from '@/components/SideBar'
 import Title from '@/components/Title'
 import Provider from '@/components/Provider'
 import Comments from '@/components/Comments'
+import Link from 'next/link'
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -72,6 +73,7 @@ export default function RootLayout({
                     Cada feedback que da una persona ayuda a salvar a las
                     ballenas contra la caza indiscriminada, xd
                   </p>
+                  <Link href={'/privacy'} className='text-cyan-500 text-xs'>Política de Privacidad</Link>
                 </div>
               </div>
               <SideBar />
