@@ -22,6 +22,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8881430598289766"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body
         className={`${nunito.className} bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-50 transition-all`}
@@ -62,9 +67,10 @@ export default function RootLayout({
                   como centro de recursos personales.
                 </p>
                 {/* <Comments /> */}
-                <div className='w-full flex justify-center items-center'>
+                <div className="w-full flex justify-center items-center">
                   <p className="w-1/2 mt-4 text-center text-xs text-gray-400">
-                    Cada feedback que da una persona ayuda a salvar a las ballenas contra la caza indiscriminada, xd
+                    Cada feedback que da una persona ayuda a salvar a las
+                    ballenas contra la caza indiscriminada, xd
                   </p>
                 </div>
               </div>
