@@ -61,7 +61,7 @@ export default function RootLayout({
                   con tu feedback. Además sentite libre de utilizar esta página
                   como centro de recursos personales.
                 </p>
-                <Comments />
+                {/* <Comments /> */}
                 <div className='w-full flex justify-center items-center'>
                   <p className="w-1/2 mt-4 text-center text-xs text-gray-400">
                     Cada feedback que da una persona ayuda a salvar a las ballenas contra la caza indiscriminada, xd
