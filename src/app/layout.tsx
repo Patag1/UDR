@@ -39,6 +39,14 @@ export default function RootLayout({
             <div className="grid grid-cols-[1fr_min-content] grid-rows-1 gap-6">
               <div className="max-w-prose">
                 {children}
+                <iframe
+                  className="rounded-xl"
+                  src="https://open.spotify.com/embed/playlist/1pTSoqm75Q9bd759BTOy7r?utm_source=generator"
+                  width="100%"
+                  height="352"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                ></iframe>
                 <br />
                 <p>
                   Si este proyecto te ayudó, considerá{' '}
