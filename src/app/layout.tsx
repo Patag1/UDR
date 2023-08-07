@@ -40,9 +40,17 @@ export default function RootLayout({
               <div className="max-w-prose">
                 {children}
                 <br />
-                <h4 className="my-4 font-extrabold text-xl">
-                  Playlist exclusiva para devs
-                </h4>
+                <div className="w-full flex justify-between items-center">
+                  <h4 className="my-4 font-extrabold text-xl">
+                    Playlist exclusiva para devs
+                  </h4>
+                  <a
+                    href="https://open.spotify.com/playlist/1pTSoqm75Q9bd759BTOy7r?si=d36ffe1f22314334&pt=78016e15b39df50fa38cca87e0aa2ffc"
+                    className="text-cyan-500 text-xs hover:underline"
+                  >
+                    colaborar en playlist
+                  </a>
+                </div>
                 <iframe
                   className="rounded-xl"
                   src="https://open.spotify.com/embed/playlist/1pTSoqm75Q9bd759BTOy7r?utm_source=generator"
