@@ -33,10 +33,6 @@ export default function Home() {
         <div className="my-2 mx-1 border-b-2 border-gray-400"></div>
         <Link href="/jobs" label="Trabajo remoto" commentary="a pescar 🎣" />
       </div>
-      <br />
-      <h4 className="my-4 font-extrabold text-xl">
-        Playlist exclusiva para devs
-      </h4>
     </>
   )
 }
