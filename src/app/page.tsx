@@ -39,7 +39,7 @@ export default function Home() {
       </h4>
       <iframe
         className="rounded-xl"
-        src="https://open.spotify.com/embed/playlist/66cYkZTFtuwp17Q53KR8qn?utm_source=generator"
+        src="https://open.spotify.com/embed/playlist/1pTSoqm75Q9bd759BTOy7r?utm_source=generator"
         width="100%"
         height="352"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
