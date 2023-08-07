@@ -39,6 +39,10 @@ export default function RootLayout({
             <div className="grid grid-cols-[1fr_min-content] grid-rows-1 gap-6">
               <div className="max-w-prose">
                 {children}
+                <br />
+                <h4 className="my-4 font-extrabold text-xl">
+                  Playlist exclusiva para devs
+                </h4>
                 <iframe
                   className="rounded-xl"
                   src="https://open.spotify.com/embed/playlist/1pTSoqm75Q9bd759BTOy7r?utm_source=generator"
