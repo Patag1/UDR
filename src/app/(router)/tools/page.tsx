@@ -39,10 +39,16 @@ const page: FC<pageProps> = ({}) => {
           commentary="modales"
         />
         <Link
+          href="https://sonner.emilkowal.ski/"
+          label="🔔 Sonner"
+          external
+          commentary="toaster"
+        />
+        <Link
           href="https://react-hot-toast.com/"
           label="🍞 React hot toast"
           external
-          commentary="alerts"
+          commentary="toaster"
         />
         <Link
           href="https://www.mercadopago.com.ar/developers/es/docs/sdks-library/client-side/sdk-js-react-installation"
