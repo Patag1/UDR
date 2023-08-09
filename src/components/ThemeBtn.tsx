@@ -24,8 +24,8 @@ const ThemeBtn: FC<ThemeBtnProps> = ({}) => {
 
   return (
     <SideBtn
-      icon1={BiSun}
-      icon2={BiMoon}
+      icon1={BiMoon}
+      icon2={BiSun}
       iconBool={bool}
       label="Theme"
       clickable
