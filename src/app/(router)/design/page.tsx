@@ -46,6 +46,29 @@ const page: FC<pageProps> = ({}) => {
           href="https://www.behance.net/"
           label="🟦 Behance"
           external
+          commentary="recurso 🔥"
+        />
+        <Link
+          href="https://godly.website/"
+          label="☑️ Godly"
+          external
+          commentary="recurso 🔥"
+        />
+        <Link
+          href="https://deck.gallery/"
+          label="◼️ deck.gallery"
+          external
+          commentary="recurso 🔥"
+        />
+        <Link
+          href="https://bestwebsite.gallery/"
+          label="🔵 Best Website Gallery"
+          external
+        />
+        <Link
+          href="https://www.lapa.ninja/"
+          label="🥷 Lapa Ninja"
+          external
         />
       </Subtitle>
       <Subtitle title="Potpourrit">
@@ -60,6 +83,18 @@ const page: FC<pageProps> = ({}) => {
           label="🖼️ Unsplash"
           external
           commentary='imágenes'
+        />
+        <Link
+          href="https://sketchvalley.com/"
+          label="⚫ Sketch Valley"
+          external
+          commentary='imágenes'
+        />
+        <Link
+          href="https://pixcap.com/"
+          label="🖋️ Pixcap"
+          external
+          commentary='imágenes 3D'
         />
       </Subtitle>
       <Subtitle title="Fuentes">
@@ -76,6 +111,11 @@ const page: FC<pageProps> = ({}) => {
         <Link
           href="https://www.myfonts.com/"
           label="Ⓜ️ MyFonts"
+          external
+        />
+        <Link
+          href="https://dirtylinestudio.com/"
+          label="✒️ Dirtyline Studio"
           external
         />
       </Subtitle>
